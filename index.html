@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderMind Hub</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="WanderMind Hub: Your sanctuary for mindful travel. Explore AI-generated podcasts, in-depth articles, and travel tips based on real-time trends. Start your conscious journey." />
+    <meta name="keywords" content="travel, mindful travel, podcast, articles, AI content, sustainable travel, wellness, travel tips, SEO, content creation" />
+    <meta name="author" content="WanderMind Hub" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wandermindhub.com/" />
+    <meta property="og:title" content="WanderMind Hub - Travel Consciously. Live Fully." />
+    <meta property="og:description" content="Explore AI-generated podcasts, in-depth articles, and travel tips based on real-time trends. Your sanctuary for mindful travel and personal growth." />
+    <meta property="og:image" content="https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://wandermindhub.com/" />
+    <meta property="twitter:title" content="WanderMind Hub - Travel Consciously. Live Fully." />
+    <meta property="twitter:description" content="Explore AI-generated podcasts, in-depth articles, and travel tips based on real-time trends. Your sanctuary for mindful travel and personal growth." />
+    <meta property="twitter:image" content="https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #FDFBF7; /* Cosmic Latte */
+      }
+      .aurora-background {
+        background-image: radial-gradient(at 27% 37%, hsla(25, 98%, 61%, 0.05) 0px, transparent 50%), 
+                          radial-gradient(at 97% 21%, hsla(180, 73%, 63%, 0.05) 0px, transparent 50%), 
+                          radial-gradient(at 75% 86%, hsla(180, 94%, 76%, 0.1) 0px, transparent 50%);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#FF7F50', /* Coral */
+                dark: '#E57248', /* Darker Coral */
+              },
+              accent: {
+                DEFAULT: '#008080', /* Teal */
+                dark: '#006666', /* Darker Teal */
+              },
+              light: '#FDFBF7', /* Cosmic Latte */
+              dark: '#333333', /* Dark Charcoal */
+              muted: '#6B7280', /* Gray-500 */
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'slide-up': {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'slide-up': 'slide-up 0.5s ease-out forwards',
+            },
+            boxShadow: {
+              'soft': '0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05)',
+              'soft-lg': '0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05)',
+            }
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.8.0",
+    "jszip": "https://esm.sh/jszip@3.10.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="font-serif text-dark antialiased aurora-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
